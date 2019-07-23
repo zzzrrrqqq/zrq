@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/spdetail/spdetail",
+    "pages/my/my",
+    "pages/car/car",
+    "pages/logs/logs",
+    "pages/active/active",
+    "pages/order/order"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#69c3aa",
+    "navigationBarTitleText": "微信小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#929292",
+    "selectedColor": "#69c3aa",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/shouye1.png",
+        "selectedIconPath": "image/shouye.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/active/active",
+        "iconPath": "image/huodong1.png",
+        "selectedIconPath": "image/huodong.png",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "iconPath": "image/car1.png",
+        "selectedIconPath": "image/car.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "image/wode1.png",
+        "selectedIconPath": "image/wode.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

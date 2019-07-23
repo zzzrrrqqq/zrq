@@ -1,0 +1,14 @@
+
+<view class='active_title'>
+      <text>火爆推荐</text>
+</view>
+
+
+<view class='active_left'>
+      <view class='item' wx:for="{{iconArray}}" wx:key="{{index}}">
+            <view class='font'>
+                  <image src='{{item.iconurl}}'></image>
+                  <text>{{item.icontext}}</text>
+            </view>
+      </view>
+</view>

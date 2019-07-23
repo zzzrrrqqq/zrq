@@ -1,0 +1,11 @@
+
+.active_title{
+  font-size: 60px;
+  color: red;
+
+}
+active_left{
+  margin-right: 0;
+  width: 100px;
+  height: 100px;
+}

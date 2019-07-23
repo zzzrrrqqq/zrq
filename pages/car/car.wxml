@@ -1,0 +1,42 @@
+<!--pages/car/car.wxml-->
+<view wx:if="{{!isHasGoods}}" class="title">购物车空空如也</view>
+<view class='car_list' wx:for="{{carList}}" wx:key="{{index}}">
+  <view class="check-box">
+    <checkbox data-alpha="{{index}}" class="check" checked="{{item.isCheck}}" bindtap="simpleSelected" />
+  </view>
+  <view class='car_left' data-goodsid="{{item.goodsId}}" bindtap='previewDetail'>
+    <image class="auto-img" mode="widthFix" src='{{item.goodsImage}}'></image>
+  </view>
+  <view class='car_right'>
+    <view class='car_name'>
+      <text>{{item.goodsName}}</text>
+    </view>
+    <view class='car_price'>
+      <text>￥{{item.goodsPrice}}</text>
+    </view>
+    <view class='car_item_operate clearfix'>
+      <view class='red' bindtap="carReduce" data-alpha="{{index}}">-</view>
+      <text>{{item.goodsCount}}</text>
+      <view class='add' bindtap="carAdd" data-alpha="{{index}}">+</view>
+    </view>
+
+
+  </view>
+  <view class="remove">
+    <image src='../../image/shanchu.png' class='auto-img' bindtap="carDel" data-alpha="{{index}}" mode="widthFix"></image>
+  </view>
+</view>
+
+<!-- 底部导航 -->
+<view wx:if="{{isHasGoods}}" class='car_bottom clearfix'>
+  <view class="all-select">
+    <text class="t">全选</text>
+    <checkbox bindtap="allSelected" class="check c" checked="{{allSelectedStatus}}" />
+  </view>
+  <view class='left'>
+    总价
+    <text>￥{{totalData}}</text>
+  </view>
+  <view class='order' bindtap='pay'>下单</view>
+</view>
+<!-- 底部导航 end -->

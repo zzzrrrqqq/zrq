@@ -1,0 +1,47 @@
+/* pages/my/my.wxss */
+.info{
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      background: #fff;
+      margin-bottom: 10px;
+}
+.info .photo{
+      width: 90px;
+      height: 90px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+}
+.info .photo image{
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+}
+.wode{
+      border-top: 1px solid #E5E5E5;
+      margin-bottom: 10px;
+} 
+.wode .item{
+      position: relative;
+      color: #000;
+      height: 45px;
+      line-height: 45px;
+      padding-left: 10px;
+      border-bottom: 1px solid #E5E5E5;
+      background: #fff;
+}
+.wode .item image{
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top:14px;
+      right:14px;
+}
+.wode_out{
+      height: 45px;
+      line-height: 45px;
+      border-top: 1px solid #E5E5E5;
+      border-bottom: 1px solid #E5E5E5;
+      background: #fff;
+      text-align: center;
+}

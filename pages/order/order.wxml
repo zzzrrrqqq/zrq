@@ -1,0 +1,97 @@
+<view class="order">
+
+  <view class="order-item">
+    <view class="order-title">
+      <view class="order-id">订单编号: aa9971827816725</view>
+      <view class="rm">删除</view>
+    </view>
+    <view class="order-time">订单时间: 2019-12-18 10:10:10</view>
+    <view>
+      <view class="item-goods">
+        <view class="item-goods-img">
+          <image class="auto-img" src="http://192.168.31.180:10000/images/aaaa.jpg" mode="widthFix"></image>
+        </view>
+        <view class="item-goods-info">
+          <view class="goods-name">小白裙</view>
+          <view class="goods-box">
+            <view class="goods-price">1.00</view>
+            <view class="goods-count">x2</view>
+          </view>
+        </view>
+      </view>
+      <view class="item-goods has-line">
+        <view class="item-goods-img">
+          <image class="auto-img" src="http://192.168.31.180:10000/images/aaaa.jpg" mode="widthFix"></image>
+        </view>
+        <view class="item-goods-info">
+          <view class="goods-name">小白裙</view>
+          <view class="goods-box">
+            <view class="goods-price">1.00</view>
+            <view class="goods-count">x2</view>
+          </view>
+        </view>
+      </view>
+      <view class="item-goods has-line">
+        <view class="item-goods-img">
+          <image class="auto-img" src="http://192.168.31.180:10000/images/aaaa.jpg" mode="widthFix"></image>
+        </view>
+        <view class="item-goods-info">
+          <view class="goods-name">小白裙</view>
+          <view class="goods-box">
+            <view class="goods-price">1.00</view>
+            <view class="goods-count">x2</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+  <view class="order-item">
+    <view class="order-title">
+      <view class="order-id">订单编号: aa9971827816725</view>
+      <view class="rm">删除</view>
+    </view>
+    <view class="order-time">订单时间: 2019-12-18 10:10:10</view>
+    <view>
+      <view class="item-goods">
+        <view class="item-goods-img">
+          <image class="auto-img" src="http://192.168.31.180:10000/images/aaaa.jpg" mode="widthFix"></image>
+        </view>
+        <view class="item-goods-info">
+          <view class="goods-name">小白裙</view>
+          <view class="goods-box">
+            <view class="goods-price">1.00</view>
+            <view class="goods-count">x2</view>
+          </view>
+        </view>
+      </view>
+      <view class="item-goods has-line">
+        <view class="item-goods-img">
+          <image class="auto-img" src="http://192.168.31.180:10000/images/aaaa.jpg" mode="widthFix"></image>
+        </view>
+        <view class="item-goods-info">
+          <view class="goods-name">小白裙</view>
+          <view class="goods-box">
+            <view class="goods-price">1.00</view>
+            <view class="goods-count">x2</view>
+          </view>
+        </view>
+      </view>
+      <view class="item-goods has-line">
+        <view class="item-goods-img">
+          <image class="auto-img" src="http://192.168.31.180:10000/images/aaaa.jpg" mode="widthFix"></image>
+        </view>
+        <view class="item-goods-info">
+          <view class="goods-name">小白裙</view>
+          <view class="goods-box">
+            <view class="goods-price">1.00</view>
+            <view class="goods-count">x2</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

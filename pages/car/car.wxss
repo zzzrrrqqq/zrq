@@ -1,0 +1,162 @@
+/* pages/car/car.wxss */
+
+/* 商品 */
+
+.car_list {
+  background: #fff;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.car_list .car_left {
+  float: left;
+  width: 80px;
+}
+
+.car_list .car_left image {
+  width: 80px;
+  height: 80px;
+}
+
+.car_right {
+  width: calc(100% - 80px - 40px - 15px - 28px);
+  float: left;
+  margin-left: 15px;
+}
+
+.car_name {
+  color: #19101a;
+  font-weight: bold;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.car_price {
+  font-size: 14px;
+  color: #f00;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.car_item_operate {
+  color: #b2b2b2;
+  text-align: center;
+  margin-right: 50px;
+}
+
+.car_item_operate view {
+  width: 26px;
+  height: 26px;
+  border: 1px solid #b2b2b2;
+  line-height: 26px;
+  float: left;
+}
+
+.car_item_operate text {
+  float: left;
+  height: 26px;
+  width: 40px;
+  line-height: 26px;
+  border-top: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+}
+
+.car_bot {
+  height: 45px;
+  line-height: 45px;
+  text-align: right;
+  padding-right: 52px;
+  background: #fff;
+  position: relative;
+  font-size: 14px;
+}
+
+.car_bot text {
+  color: #f00;
+}
+
+.car_bot image {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 14px;
+  right: 18px;
+}
+
+/* 底部导航 */
+
+.car_bottom {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  background: #fff;
+  border-bottom: 1px solid #b2b2b2;
+  width: 100%;
+}
+
+.car_bottom .left {
+  margin-left: 10px;
+  float: left;
+}
+
+.car_bottom .left text {
+  color: #f00;
+}
+
+.car_bottom .order {
+  float: right;
+  width: 80px;
+  height: 30px;
+  margin: 10px 10px 0 0;
+  background: #ff7e3a;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 2px;
+}
+
+.auto-img {
+  width: 100%;
+  display: block;
+}
+
+.check-box {
+  float: left;
+  width: 40px;
+  margin-top: 25.5px;
+}
+
+.check {
+  display: block;
+  width: 25px;
+  margin: 0 auto;
+}
+
+.remove{
+  float: left;
+  width: 28px;
+  margin-top: 22px;
+}
+
+.all-select{
+  float: left;
+  overflow: hidden;
+}
+
+.t{
+  float: left;
+  margin: 0 10px;
+}
+
+.c{
+  float: left;
+}
+
+.title{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+}

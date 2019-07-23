@@ -1,0 +1,66 @@
+<!--pages/spdetail/spdetail.wxml-->
+<view class="spdetail">
+<!-- 轮播图 -->
+<view class="page-section page-section-spacing swiper" wx:if="{{goodsDetailData.detailImgs.length > 1}}">
+      <swiper style="height: {{height}}px" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}">
+            <block wx:for="{{goodsDetailData.detailImgs}}" wx:key="{{index}}">
+                  <swiper-item>
+                        <image bindload='imgloaded' src="{{item}}" class="auto-img" mode="widthFix" ></image>
+                  </swiper-item>
+            </block>
+      </swiper>
+</view>
+<view wx:else>
+  <image class="auto-img" src="{{goodsDetailData.detailImgs[0]}}" mode="widthFix"></image>
+</view>
+<!-- 轮播图 end -->
+
+<view class='goods_info_top'>
+      <view class='goods_title'>
+            <view>{{goodsDetailData.goodsName}}</view>
+            <view class='goods_collect_btn'>
+                  <image src='../../image/icon-aixin.png'></image>
+                  <text>未收藏</text>
+            </view>
+      </view>
+      <view class='goods_price'>
+            <text>￥{{goodsDetailData.goodsPrice}}</text>
+            <!-- <text class='old_price'>￥999.00</text> -->
+      </view>
+      <view class='goods_deliver'>
+            *本产品又某商家发货
+      </view>
+</view>
+
+<view class='goods_content'>
+  <view class="c-img fl">
+    <image class="auto-img" mode="widthFix" src='../../image/brand.png'></image>
+  </view>
+  <view class="c-text fl">
+    <view>商品描述</view>
+    <view>{{goodsDetailData.goodsDescription}}</view>
+  </view>
+</view>
+
+
+<!-- 底部导航 -->
+<view class='goods_bottom_btn clearfix'>
+      <view class='btn bt1'>
+            <view class='num'>
+                  <image src='../../image/car.png'></image>
+                  <text>{{shopcartCount}}</text>
+            </view>
+      </view>
+      <view class='btn bt2' bindtap='productCity'>
+            前往商城
+      </view>
+      <view class='btn bt3' bindtap='addShopcart'>
+             加入购物车
+      </view>
+      <view class='btn bt4'>
+            前往支付
+      </view>
+</view>
+<!-- 底部导航 end -->
+
+</view>

@@ -1,0 +1,68 @@
+<!-- 轮播图 -->
+<view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}">
+            <block wx:for="{{images}}" wx:key="{{index}}">
+                  <swiper-item>
+                        <image src='{{item}}' class='swiper_image'></image>
+                  </swiper-item>
+            </block>
+      </swiper>
+</view>
+<!-- 轮播图 end -->
+
+<!-- 分类 -->
+<view class='category clearfix'>
+      <view class='item' wx:for="{{iconArray}}" wx:key="{{index}}">
+            <view class='wrap'>
+                  <image src='{{item.iconurl}}'></image>
+                  <text>{{item.icontext}}</text>
+            </view>
+      </view>
+</view>
+<!-- 分类 end -->
+
+<view class='common_title'>
+      <text>电影推荐</text>
+</view>
+
+<!-- 电影 -->
+<view class='movie' wx:for="{{movieList}}" wx:key="{{index}}">
+      <view class='text'>
+            <text>{{item.title}}</text>
+      </view>
+      <view class='img'>
+            <image src='{{item.image}}' mode='widthFix'></image>
+      </view>
+</view>
+<!-- 电影 end -->
+
+<view class='common_title'>
+      <text>猜你喜欢</text>
+</view>
+
+<!-- 商品列表 -->
+<view class='goods_list' wx:for="{{goodsList}}" wx:key="{{index}}" bindtap='goPage' data-goodsid="{{item.goodsId}}">
+      <view>
+            <view class='goods_left'>
+                  <image src='{{item.goodsImage}}'></image>
+            </view>
+            <view class='goods_right'>
+                  <view class='goods_name'>
+                        <text>{{item.goodsName}}</text>
+                  </view>
+                  <view class='goods_address'>
+                        <text>{{item.goodsAddress}}</text>
+                  </view>
+                  <view class='goods_price'>
+                        <text>￥{{item.goodsPrice}}</text>
+                  </view>
+                  <view class='goods_car'>
+                        <image src='../../image/car.png'></image>
+                  </view>
+            </view>
+      </view>
+</view>
+
+
+
+<!-- 商品列表 end -->
